@@ -1,0 +1,81 @@
+{
+  "name": "restify-boilerplate",
+  "version": "0.0.0-semantically-released",
+  "description": "restify microservice boilerplate",
+  "main": "src/serve.js",
+  "repository": "git@github.com:shellthor/microservice-boilerplate.git",
+  "author": "Jeff Detmer <jeff.detmer@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=8.6.0",
+    "npm": ">=5.4.2",
+    "yarn": ">=1.1.0"
+  },
+  "scripts": {
+    "add-contributor": "jmd-scripts contributors add",
+    "build": "jmd-scripts build",
+    "commit": "git-cz",
+    "format": "jmd-scripts format",
+    "lint": "jmd-scripts lint",
+    "setup": "npm install && npm run validate",
+    "start":
+      "nodemon src/serve --exec \"node --require babel-register --require babel-polyfill\" | bunyan",
+    "test": "jmd-scripts test --no-watch",
+    "test:cover": "jmd-scripts test --coverage",
+    "test:watch": "jmd-scripts test",
+    "test:update": "npm test:cover -s -- --updateSnapshot",
+    "validate": "jmd-scripts validate lint,test"
+  },
+  "eslintConfig": {
+    "extends": ["./node_modules/jmd-scripts/eslint.js"]
+  },
+  "eslintIgnore": ["node_modules", "coverage", "dist", "typings"],
+  "babel": {
+    "presets": ["jmd-scripts/babel"]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "jmd-scripts precommit"
+    }
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "bluebird": "3.5.1",
+    "bunyan": "1.8.12",
+    "bunyan-sentry-stream": "1.2.1",
+    "cross-env": "5.1.3",
+    "dotenv": "5.0.1",
+    "helmet": "3.12.0",
+    "joi": "13.1.2",
+    "jsonwebtoken": "8.2.0",
+    "knex": "0.14.4",
+    "lodash": "4.17.5",
+    "mock-knex": "0.4.0",
+    "mongoose": "5.0.9",
+    "oracledb": "2.1.2",
+    "passport": "0.4.0",
+    "passport-jwt": "3.0.1",
+    "passport-local": "1.0.0",
+    "pg": "7.4.1",
+    "pg-connection-string": "2.0.0",
+    "pg-hstore": "2.3.2",
+    "raven": "2.4.2",
+    "restify": "6.3.4",
+    "restify-cors-middleware": "1.1.0",
+    "restify-errors": "6.0.0",
+    "restify-pino-logger": "2.0.0",
+    "semver": "5.5.0"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
+    "jmd-scripts": "1.5.34",
+    "nodemon": "1.17.1"
+  }
+}
