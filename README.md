@@ -21,22 +21,6 @@
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Star on GitHub][github-star-badge]][github-star]
 
-## Table of Contents
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-* [The problem](#the-problem)
-* [This solution](#this-solution)
-* [Table of Contents](#table-of-contents)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributors](#contributors)
-* [License](#license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## The problem
 
 I needed a project to demo the capabilities of the commitizen and semantic-release tools to my team.
@@ -47,12 +31,16 @@ This project is setup to use both [Commitizen](https://github.com/commitizen/cz-
 
 ## Table of Contents
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 * [Installation](#installation)
 * [Usage](#usage)
-* [Inspiration](#inspiration)
-* [Other Solutions](#other-solutions)
 * [Contributors](#contributors)
-* [LICENSE](#license)
+* [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Installation
 
