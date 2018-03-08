@@ -1,5 +1,5 @@
 import knex from 'knex'
-import config from './oracleConfig'
+import config from './postgressConfig'
 
 const db = knex(config)
 

@@ -4,7 +4,7 @@ import {parse} from 'pg-connection-string'
 
 const envVarsSchema = joi
   .object({
-    PG_URI: joi
+    DATABASE_URL: joi
       .string()
       .uri({scheme: 'postgres'})
       .required(),
