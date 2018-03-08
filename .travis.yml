@@ -11,12 +11,4 @@ node_js:
 script:
 - npm run validate
 after_success: jmd-scripts travis-after-success
-deploy:
-  provider: heroku
-  api_key:
-    secure: UZiWXeDFDOomsr2MbcqEPplAyZXOA7gUSfHtbyiCeGbr5UsCMasNl7Q1FmQoSyJ0bUTMvyXjFgfxl3qOrXGtjwSJfWxolX0YAXG95nMgCYvY0nTIibyEVM/4nOEbvlGL0VkB7yYuCyV5Zu2omxlVw0FXsX+T6wnDEEsa9phQZxoa089+J6nGIkjA1cIElVrrQvndnAAk0osg2lZO7TZrLBDR6ZFcFeYHclcoLmDFKSzWMs2+Wt8YZx4Uz6RpR7UB3wZfFnCBUqXrRhScm6K26XoWBuHZq6mqNL5N0AyH/dKjLvtuAFTGaJ+E/tdeD91RCg8sp1cBf+KMhmyn5PI/a/G7BTdnbW+r4FK5xzk1HaWednPRwjW+yFnqMzwry1nh6ZmfVpk8lD6XSmdbA8T/NgsoGN+SiVsgfKAoZlr9DF5nhbJ8scEd//0SonoCpxP4S9iWYIULQMiLG4URrbo3TZML+tTK/X+Y2Fw4rBfBKbPLatZNbTwwTqiQ0htGpNFZ7L4feNaQs/TbO20nPQzFx5nFgtCB7ePix42JRkA2uxrRubBquyAAPvv07TAfw/V0IxUGmHUtiiSO6jZJ2PjWiMTXDqSKE4LeKXO154t4gq6KPPY8wxNKXOEzy1Om+Fd2VoTQWF92hQojI7cA1ih9rBpDJigFP2/KuVWXI+WsN+k=
-  on:
-    branch: master
-    node: 8
-  app: shellthor-semantic-demo
-  skip_cleanup: true
+
