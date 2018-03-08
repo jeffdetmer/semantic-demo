@@ -8,6 +8,9 @@
   "author": "Jeff Detmer <jeff.detmer@gmail.com>",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=8.6.0",
     "npm": ">=5.4.2",
