@@ -3,7 +3,7 @@
   "version": "0.0.0-semantically-released",
   "description":
     "demo of the functionality provided by commitizen and semantic-release",
-  "main": "src/serve.js",
+  "main": "dist/serve.js",
   "repository": "git@github.com:shellthor/semantic-demo.git",
   "author": "Jeff Detmer <jeff.detmer@gmail.com>",
   "license": "MIT",

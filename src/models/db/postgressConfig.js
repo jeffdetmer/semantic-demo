@@ -37,7 +37,7 @@ const envVars = joi.attempt(process.env, envVarsSchema)
 const config = {
   client: 'pg',
   connection: Object.assign(
-    parse(envVars.PG_URI),
+    parse(envVars.DATABASE_URL),
     envVars.PG_SSL_CA || envVars.PG_SSL_KEY || envVars.PG_SSL_CERT
       ? {
           ssl: {
